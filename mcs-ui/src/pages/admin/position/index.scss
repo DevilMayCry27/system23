@@ -1,0 +1,83 @@
+@import '../../../assets/scss/global.scss';
+
+.position-list-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.access-modal {
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .ant-modal-header {
+        background-color: $lloyd;
+    }
+
+    .ant-modal-title {
+        color: $white;
+        text-align: center;
+    }
+
+    .access-row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .table-container {
+        overflow: scroll;
+
+        .main-table {
+            margin: 2rem 0;
+
+            .ant-table-thead .ant-table-cell {
+                background-color: $lloyd;
+                color: $white;
+                font-weight: 700;
+                vertical-align: bottom;
+            }
+        }
+
+        .module-name {
+            font-weight: 800;
+        }
+
+        .switch-button {
+            font-weight: 800;
+        }
+
+        .ant-switch-checked {
+            background-color: $lloyd;
+        }
+    }
+
+    .modal-action-btns {
+        display: flex;
+        justify-content: flex-end;
+
+        .cancel-btn {
+            border-color: $lloyd;
+            color: $lloyd;
+            margin: 0.5rem;
+        }
+
+        .submit-btn {
+            background-color: $lloyd;
+            color: $white;
+            margin: 0.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    .position-list-page {
+        padding: 0;
+    }
+}

@@ -1,0 +1,117 @@
+@import "./../../../assets/scss/global.scss";
+
+.profileTab {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 20px;
+
+  .left {
+    grid-column: span 12 / span 12;
+
+    .configContainer {
+      height: 100%;
+      width: 100%;
+
+      box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, 0.2);
+      padding: 30px;
+      border-radius: 20px;
+      background-color: white;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  .right {
+    grid-column: span 12 / span 12;
+    .profileContainer {
+      height: 100%;
+      width: 100%;
+
+      box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, 0.2);
+      padding: 30px;
+      border-radius: 20px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      gap: 40px;
+
+      height: 100%;
+      width: 100%;
+
+      .left,
+      .right {
+        flex: 1;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        word-break: break-all;
+        .title {
+          font-variant: small-caps;
+          color: $lloyd;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .profileTab {
+    .left {
+      grid-column: span 12 / span 12;
+      .configContainer {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    .right {
+      grid-column: span 12 / span 12;
+
+      .profileContainer {
+        flex-direction: row;
+        align-items: flex-start;
+
+        .left,
+        .right {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .profileTab {
+    .left {
+      grid-column: span 1 / span 1;
+      .configContainer {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .right {
+      grid-column: span 11 / span 11;
+
+      .profileContainer {
+        flex-direction: row;
+        align-items: flex-start;
+
+        .left,
+        .right {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}

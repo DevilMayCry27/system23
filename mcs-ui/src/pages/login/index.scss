@@ -1,0 +1,117 @@
+@import '../../assets/scss/global.scss';
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $lloyd;
+   
+    .login-content {
+        background-color: $lloyd;
+        border-radius: 5px;
+        border: 1px solid $white;
+
+        .portal-info {
+            text-align: center;
+            padding: 2rem;
+
+            .image-container {
+                max-width: 100%;
+
+                .lli-logo {
+                    background-color: $white;
+                    padding: 1rem;
+                    width: 60%;
+                    border-radius: 50%;
+                }
+            }
+
+            .portal-name {
+                color: $white;
+                font-weight: 800;
+                font-size: 2rem;
+                margin: 1rem;
+            }
+
+        }
+
+        .login-form {
+            background-color: $white;
+            padding: 5rem 4rem;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+            .login-header {
+                text-align: center;
+
+                .user-icon {
+                    background-color: $lloyd;
+                    padding: 0.8rem;
+                    font-size: 1.5rem;
+                    border-radius: 50%;
+                    color: $white;
+                    margin: 0.5rem;
+                }
+
+                .title {
+                    text-align: center;
+                    margin-bottom: 2rem;
+                    color: $lloyd;
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                }
+            }
+
+            .field-label {
+                color: $lloyd;
+                font-weight: 700;
+                font-size: 1rem;
+            }
+
+            .login-btn {
+                background-color: $lloyd;
+                color: $white;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .login-page {
+    
+        .login-content {
+            border-radius: 5px;
+            background-color: $white;
+    
+            .portal-info {
+                display: none;
+            }
+    
+            .login-form {
+                padding: 2rem;
+                border-radius: 5px;
+    
+                .login-header {
+
+                    .user-icon {
+                        padding: 0.5rem;
+                        font-size: 1rem;
+                    }
+    
+
+                    .title {
+                        margin-bottom: 1rem;
+                        font-size: 0.8rem;
+                    }
+
+                }
+    
+                .field-label, .login-btn {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}

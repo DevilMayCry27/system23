@@ -1,0 +1,114 @@
+/* Basic editor styles */
+
+.tiptap {
+  > * + * {
+    margin-top: 0.75em;
+    padding: 10px;
+  }
+
+  padding: 10px;
+  min-height: 60px;
+  overflow: auto;
+
+  // border: 0.2px solid rgb(148, 148, 148, 0.5);
+
+  ul,
+  ol {
+    padding: 0 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.1;
+  }
+
+  code {
+    background-color: rgba(#616161, 0.1);
+    color: #616161;
+    padding: 2px;
+  }
+
+  pre {
+    background: #0d0d0d;
+    color: #fff;
+    font-family: "JetBrainsMono", monospace;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+
+    code {
+      color: inherit;
+      padding: 0;
+      background: none;
+      font-size: 0.8rem;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  blockquote {
+    padding-left: 1rem;
+    border-left: 2px solid rgba(#0d0d0d, 0.1);
+  }
+
+  hr {
+    border: none;
+    border-top: 2px solid rgba(#0d0d0d, 0.1);
+    margin: 0.5rem 0;
+  }
+
+  textarea {
+    height: 190px;
+  }
+}
+
+.menubar {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 2px;
+  padding: 1px;
+  background-color: rgb(251, 251, 251);
+
+  button {
+    border: 0.5px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.menubar {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 2px;
+  padding: 1px;
+  background-color: rgb(251, 251, 251);
+
+  button {
+    border: 0.5px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.bordered {
+  border: 0.2px solid rgb(148, 148, 148, 0.5);
+  border-radius: 8px;
+  min-height: 120px;
+  max-height: 250px;
+}
+
+.error {
+  border-color: red !important;
+}

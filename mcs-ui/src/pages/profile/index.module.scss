@@ -1,0 +1,10 @@
+.profileContainer {
+  padding: 20px 40px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .profileContainer {
+    padding: 20px 50px;
+  }
+}

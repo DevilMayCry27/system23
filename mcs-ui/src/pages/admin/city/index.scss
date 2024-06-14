@@ -1,0 +1,46 @@
+@import '../../../assets/scss/global.scss';
+
+.user-list-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.new-modal {
+
+    .field-text {
+        font-weight: 700;
+    }
+    
+    .success-text {
+        font-weight: 700;
+        color: $lloyd;
+    }
+
+    .failed-text {
+        font-weight: 700;
+        color: $red;
+    }
+
+    .main-table {
+        margin: 2rem 0;
+
+        .ant-table-thead .ant-table-cell {
+            background-color: $lloyd;
+            color: $white;
+            font-weight: 700;
+            vertical-align: bottom;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    .user-list-page {
+        padding: 0;
+    }
+}
